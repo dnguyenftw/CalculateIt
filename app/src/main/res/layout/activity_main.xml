@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context="com.example.danie.calculateit.MainActivity">
+
+    <Button
+        android:text="+7"
+        android:onClick="addingSeven"
+        android:textSize="60sp"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:id="@+id/button"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="/2"
+        android:onClick="divideByTwo"
+        android:textSize="60sp"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:id="@+id/button3"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Set back to zero"
+        android:onClick="resetNumber"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="-4"
+        android:onClick="subtractingFour"
+        android:textSize="60sp"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:id="@+id/button2"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="You"
+        android:textSize="40sp"
+        android:textColor="#e0e0e0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:text="0"
+        android:gravity="center"
+        android:textSize="70sp"
+        android:textColor="#e0e0e0"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:layout_marginEnd="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target"
+        android:id="@+id/textView"
+        android:textSize="40sp"
+        android:textColor="#e0e0e0"
+        android:textStyle="bold"
+        android:layout_marginEnd="35dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="1"
+        android:gravity="center"
+        android:textSize="70sp"
+        android:textColor="#e0e0e0"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:text="20"
+        android:textColor="#e0e0e0"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:id="@+id/textTimer" />
+
+</RelativeLayout>
